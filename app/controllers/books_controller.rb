@@ -8,7 +8,7 @@ before_action :find_book, only: [:show, :edit, :update, :destroy]
   end
 
   def new
-    @book = Book.new
+    @book = current_user.books.build
   end
 
   def edit
@@ -28,7 +28,7 @@ before_action :find_book, only: [:show, :edit, :update, :destroy]
   end
 
   def create
-    @book = Book.new(book_params)
+    @book = current_user.books.build(book_params)
     if @book.save
       redirect_to root_path
     else
