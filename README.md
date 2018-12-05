@@ -1,25 +1,19 @@
-# README
+# README   bookreview
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby Version ruby '2.5.1'
 
-Things you may want to cover:
+Required gems =
 
-* Ruby version
+gem 'simple_form', '~> 4.1'
 
-* System dependencies
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
-* Configuration
+gem 'devise', '~> 4.5'
 
-* Database creation
+gem 'paperclip', '~> 6.1'
 
-* Database initialization
+This is a sample Ruby on Rails app built as a demo of a book review application like Goodreads. Users can create an account, log in and upload their own reviews of books. Users cannot edit other user's reviews and must be validated to use site.
 
-* How to run the test suite
+Open source code feel free to use away!
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# bookreview
+special thanks to the team from paperclip for some debugging. 
